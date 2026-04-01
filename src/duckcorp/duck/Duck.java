@@ -28,7 +28,14 @@ public abstract class Duck implements Qualifiable {
 
     // --- Méthodes abstraites à implémenter dans les sous-classes ---
 
+    /**
+     * @return le prix de base du canard
+     */
     public abstract double getBasePrice();
+
+    /**
+     * @return une description du type de canard
+     */
     public abstract String describe();
 
     /**
