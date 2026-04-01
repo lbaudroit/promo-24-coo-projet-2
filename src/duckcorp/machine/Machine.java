@@ -69,6 +69,7 @@ public abstract class Machine implements Maintainable {
 
     // --- Méthodes abstraites à implémenter dans les sous-classes ---
 
+    /** Crée un canard du type donné */
     public abstract Duck   produceDuck();
     public abstract int    getPurchaseCost();
     public abstract String getName();
