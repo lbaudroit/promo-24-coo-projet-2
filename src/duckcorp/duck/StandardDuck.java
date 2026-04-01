@@ -15,7 +15,7 @@ public class StandardDuck extends Duck {
      *
      * @param qualityScore le score de qualité calculé
      */
-    protected StandardDuck(int qualityScore) {
+    public StandardDuck(int qualityScore) {
         super(DuckType.STANDARD, qualityScore);
     }
 

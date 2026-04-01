@@ -15,7 +15,7 @@ public class MiniDuck extends Duck {
      *
      * @param qualityScore le score de qualité calculé
      */
-    protected MiniDuck(int qualityScore) {
+    public MiniDuck(int qualityScore) {
         super(DuckType.MINI, qualityScore);
     }
 
