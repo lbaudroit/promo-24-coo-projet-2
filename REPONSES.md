@@ -15,3 +15,12 @@ Ex : Qualifiable.isDefective utilise Qualifiable.getQualityScore(), implémenté
 On choisit une interface pour exprimer une relation de type "sait-faire" plutôt que "est-un" pour une classe.
 Maintenable a peu à gagner à devenir une classe abstraite, et Machine en tant qu'interface serait appauvrie car 
 elle n'aurait pas les champs nécessaires à son fonctionnement.
+
+# Question (Ex4) : 
+> Expliquez pourquoi canBeFulfilled(Stock<Duck> stock) serait une signature plus restrictive que 
+> canBeFulfilled(Stock<? extends Duck> stock). 
+> Donnez un exemple de code Java qui compilerait avec la seconde mais pas avec la première.
+
+La première option va nous permettre de lire dans un Stock contenant exclusivement des Duck,
+tandis que la seconde accepterait des Stock<MiniDuck> par exemple.
+
