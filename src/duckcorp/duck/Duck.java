@@ -17,7 +17,7 @@ public abstract class Duck implements Qualifiable {
     protected Duck(DuckType type, int qualityScore) {
         this.id           = type.name().charAt(0) + String.format("%04d", ++counter);
         this.type         = type;
-        this.qualityScore = Math.max(0, Math.min(100, qualityScore));
+        this.qualityScore = Math.clamp(qualityScore, 0, 100);
     }
 
     // --- Getters fournis ---
