@@ -24,3 +24,12 @@ elle n'aurait pas les champs nécessaires à son fonctionnement.
 La première option va nous permettre de lire dans un Stock contenant exclusivement des Duck,
 tandis que la seconde accepterait des Stock<MiniDuck> par exemple.
 
+# Question ouverte (dans REPONSES.md)
+> Factory expose getMachines() qui retourne une List<Machine> non modifiable (via Collections.unmodifiableList()). 
+> Pourquoi ce choix ? 
+> Que se passerait-il si on retournait la liste interne directement ? 
+> Peut-on quand même modifier les machines elles-mêmes (via leurs méthodes) depuis l'extérieur ?
+
+Une liste non-modifiable permet d'éviter les ajouts et suppressions depuis les méthodes appelant getMachines(), 
+ce qui arriverait si on utilisait la liste interne directement
+On peut cependant modifier les machines en les récupérant dans la liste non-modifiable
